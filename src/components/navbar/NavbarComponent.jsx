@@ -281,7 +281,7 @@ export default function NavbarComponent() {
           prevEl: '.swiper-button-prev',
         }}
         spaceBetween={15}
-        slidesPerView={8}
+        slidesPerView={9}
         scrollbar={{ draggable: true,
                       hide: true, }}
          className="mySwiper cursor-pointer w-[125%] md:w-[93%]">
