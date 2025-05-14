@@ -185,7 +185,7 @@ export default function NavbarComponent() {
             
             <ModeToggle />
             {/* USER MENU */}
-   <div className='flex gap-3 rounded-full h-fit py-1 px-1 w-fit border-1 border-gray-300 items-center justify-center cursor-ponter'>
+   <div className='flex gap-2 rounded-full h-fit py-2 px-2 w-fit border-1 border-gray-300 items-center justify-center cursor-ponter'>
             <DropdownMenu>
       <DropdownMenuTrigger asChild>
          <div>
