@@ -4,7 +4,7 @@ import React from 'react'
 export default function FilterComponent({name, icon}) {
   return (
 
-<button className='flex text-[13px] flex-col items-center justify-center focus:text-black text-gray-500'>
+<button className='flex text-[13px] flex-col items-center justify-center text-gray-500'>
     <div className='cursor-pointer'>
       {icon}
     </div>

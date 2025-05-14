@@ -261,7 +261,7 @@ export default function NavbarComponent() {
 
 {/* RESPONSIVE SEARCH */}
 <div className='sm:flex md:hidden justify-center items-center w-[95%] py-4 rounded-full shadow-[0_0_50px_rgba(0,0,0,0.2)] mt-[4%] m-auto'>
-  <div className='flex text-center ml-[9%] justify-center items-center gap-2 w-full'>
+  <div className='flex text-center ml-[10%] justify-center items-center gap-2 w-full'>
     <Search size={18} />
     <input type='text' placeholder='Start search'/>
   </div>
@@ -297,7 +297,7 @@ export default function NavbarComponent() {
           </SwiperSlide>
         ))}
         <div className='swiper-button-prev absolute z-5 top-[16%] cursor-pointer bg-white shadow-[0_0_50px_rgba(0,0,0,0.4)] text-[#333] text-[.8rem] h-8 w-8 rounded-full flex items-center justify-center left-[10px]'><ChevronLeft /></div>
-        <div className='swiper-button-next absolute z-5 top-[16%] cursor-pointer bg-white shadow-[0_0_50px_rgba(0,0,0,0.4)] text-[#333] text-[.8rem] h-8 w-8 rounded-full flex items-center justify-center right-[120px] md:right-[10px]'><ChevronRight/></div>
+        <div className='swiper-button-next absolute z-5 top-[16%] cursor-pointer bg-white shadow-[0_0_50px_rgba(0,0,0,0.4)] text-[#333] text-[.8rem] h-8 w-8 rounded-full flex items-center justify-center right-[115px] md:right-[10px]'><ChevronRight/></div>
       {/* </div> */}
       </Swiper> 
 
