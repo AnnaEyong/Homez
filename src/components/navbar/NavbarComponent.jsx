@@ -26,6 +26,15 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 import {
+  ClerkProvider,
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from '@clerk/nextjs'
+
+import {
   ChevronLeft,
   ChevronRight,
   SlidersHorizontal,
@@ -176,15 +185,12 @@ export default function NavbarComponent() {
             
             <ModeToggle />
             {/* USER MENU */}
-            
+   <div className='flex gap-3 rounded-full h-fit py-1 px-1 w-fit border-1 border-gray-300 items-center justify-center cursor-ponter'>
             <DropdownMenu>
       <DropdownMenuTrigger asChild>
-         <div className='flex gap-3 rounded-full h-fit py-2 px-1 w-[90px] border-1 border-gray-300 items-center justify-center cursor-ponter'>
-                <Menu size={20} className='cursor-pointer'/>
-                <div className='rounded-full text-white bg-gray-400 h-[35px] w-[35px] flex justify-center items-center'>
-                    <UserRound size={20} className='cursor-pointer' />
-                </div>
-            </div>
+         <div>
+            <Menu size={20} className='cursor-pointer'/>
+          </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         <DropdownMenuLabel>My Account</DropdownMenuLabel>
@@ -237,6 +243,15 @@ export default function NavbarComponent() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
+
+                <SignedOut>
+              <SignInButton />
+              <SignUpButton />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+    </div>       
     {/* END USER MENU */}
           </div>
       </div>
